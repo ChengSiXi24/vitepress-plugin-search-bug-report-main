@@ -55,7 +55,9 @@ vite.config.ts
 Can run but there seems to be a more Bug:
 More errors and Page blank
 ![errormsg](errorphoto-2-2.png)
+![errormsg](errorphoto-2-4.png)
 ![errormsg](errorphoto-2-3.png)
+
 
 ```text
 Type 'Plugin_2' is not assignable to type 'PluginOption'.
