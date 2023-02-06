@@ -4,7 +4,7 @@ import { defineConfig } from "vite";
 
 //default options
 var options = {
-  ...flexSearchIndexOptions,
+  //...flexSearchIndexOptions,
   previewLength: 62,
   buttonLabel: "Search",
   placeholder: "Search docs",
