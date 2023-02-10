@@ -1,9 +1,11 @@
-# vitepress-plugin-search Error report
+# vitepress-plugin-search Error report(Solved)
 
 The configuration provided by vitepress-plugin-search is currently incompatible and does not work.
 
 I ran the basic configuration of the page in the way provided by the official website of vuepress,
 and then installed the dependency and configuration according to the command provided by the repository.
+
+## **The current problem has been solved.**
 
 The attempt failed and two errors were reported
 [Issues Link](https://github.com/emersonbottero/vitepress-plugin-search/issues/53)
@@ -89,3 +91,14 @@ Type 'Plugin_2' is not assignable to type 'PluginOption'.
                                               Type 'import("d:/web/vitepress-plugin-search-bug-report/node_modules/vitepress-plugin-search/node_modules/vite/dist/node/index").PluginOption' is not assignable to type 'import("d:/web/vitepress-plugin-search-bug-report/node_modules/vite/dist/node/index").PluginOption'.
                                                 Type 'PluginOption[]' is not assignable to type 'PluginOption'.
 ```
+
+## Final solution
+
+> leave only the `config.js` file inside .vitepress
+> 
+> remove `node_modules` and `package-lock.json`
+> `npm i`
+> `npm run docs:dev`
+
+![Final solution](ok1.png)
+![solved](OK.png)
