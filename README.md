@@ -1,13 +1,7 @@
 # vitepress-plugin-search Error report(Solved)
 
-The configuration provided by vitepress-plugin-search is currently incompatible and does not work.
-
-I ran the basic configuration of the page in the way provided by the official website of vuepress,
-and then installed the dependency and configuration according to the command provided by the repository.
-
 ## **The current problem has been solved.**
 
-The attempt failed and two errors were reported
 [Issues Link](https://github.com/emersonbottero/vitepress-plugin-search/issues/53)
 
 ## Original error:
