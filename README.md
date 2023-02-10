@@ -21,13 +21,16 @@ var options = {
   previewLength: 62,
   buttonLabel: "Search",
   placeholder: "Search docs",
-};export default defineConfig({
+};
+export default defineConfig({
   plugins: [SearchPlugin(options)],
 });
 ```
 
 ## An error occurred when configuring vitepress again:
+
 config:
+
 ```typescript
 //Path /docs/.vitepress/theme/index.ts
 export default {
@@ -43,13 +46,14 @@ export default {
 }
 ```
 
-```
+```typescript
 //Path /docs/.vitepress/config.ts
 export default {
     title: 'My docsite',
     description: 'a new docsite'
 };
 ```
+
 vite.config.ts
 ![errormsg](errorphoto-2-1.png)
 Can run but there seems to be a more Bug:
@@ -57,7 +61,6 @@ More errors and Page blank
 ![errormsg](errorphoto-2-2.png)
 ![errormsg](errorphoto-2-4.png)
 ![errormsg](errorphoto-2-3.png)
-
 
 ```text
 Type 'Plugin_2' is not assignable to type 'PluginOption'.
@@ -86,4 +89,3 @@ Type 'Plugin_2' is not assignable to type 'PluginOption'.
                                               Type 'import("d:/web/vitepress-plugin-search-bug-report/node_modules/vitepress-plugin-search/node_modules/vite/dist/node/index").PluginOption' is not assignable to type 'import("d:/web/vitepress-plugin-search-bug-report/node_modules/vite/dist/node/index").PluginOption'.
                                                 Type 'PluginOption[]' is not assignable to type 'PluginOption'.
 ```
-
